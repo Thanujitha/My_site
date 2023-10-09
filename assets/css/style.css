@@ -1,0 +1,245 @@
+@font-face {
+	font-family: "Poppins";
+	src: url("/assets/font/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("/assets/font/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: "Quicksand";
+}
+
+.title_1 {
+	font-family: "Poppins";
+	font-size: 45px;
+	color: #4a4a4a;
+}
+
+.profile {
+	width: 400px;
+	height: 400px;
+	background-position: center;
+
+}
+
+/* Image Galary */
+.portfolio-menu {
+	text-align: center;
+}
+
+.portfolio-menu ul li {
+	display: inline-block;
+	margin: 0;
+	list-style: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	-webkit-transition: all 05s ease;
+	-moz-transition: all 05s ease;
+	-ms-transition: all 05s ease;
+	-o-transition: all 05s ease;
+	transition: all .5s ease;
+}
+
+
+.portfolio-item .item {
+	/*width:303px;*/
+	float: left;
+	margin-bottom: 10px;
+}
+
+/* Image Galary */
+
+
+/* Social Media icon */
+
+/* contact us */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .button {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: 0 5px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+	width: 200px;
+}
+
+.wrapper .button .icon {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border-radius: 50px;
+	box-sizing: border-box;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+	background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+	background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+	background: #30e136;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+	background: #4fb1ed;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+	background: #ff0000;
+}
+
+.wrapper .button .icon i {
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+	color: #fff;
+}
+
+.wrapper .button span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+	color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+	color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+	color: #39e130;
+}
+
+.wrapper .button:nth-child(4) span {
+	color: #348de0;
+}
+
+.wrapper .button:nth-child(5) span {
+	color: #ff0000;
+}
+
+/* contact us */
+
+/* order by */
+
+.wrapper_order .button:hover {
+	width: 200px;
+}
+
+.wrapper_order .button .icon {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border-radius: 50px;
+	box-sizing: border-box;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper_order .button {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: 0 5px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-out;
+}
+
+.wrapper_order .button:nth-child(1):hover .iconfiver {
+	background: #1bb820;
+}
+
+.wrapper_order .button:nth-child(2):hover .iconfiver {
+	background: #149818;
+}
+
+.wrapper_order .button .icon i {
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper_order .button:hover .icon i {
+	color: #fff;
+}
+
+.wrapper_order .button span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper_order .button:nth-child(1) span {
+	color: #27bf1f;
+}
+
+.wrapper_order .button:nth-child(2) span {
+	color: #1d9e16;
+}
+
+
+.OrderByIcon {
+	height: 30px;
+}
+
+/* order by */
+
+.link1 {
+	text-decoration: none;
+}
+
+.link1:hover {
+	text-decoration: none;
+}
+
+/* Social Media icon */
+
+
+.sampleDiv:hover{
+	background-color: white;
+	border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px rgb(169, 169, 169);
+	transform: translate(0px, -20px);
+	transition-duration: 0.5s;
+}
+
