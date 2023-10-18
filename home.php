@@ -44,89 +44,91 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-12" id="about">
+                <div class="col-12" id="Services">
                     <div class="row">
 
                         <div class="col-12 text-center mt-3 " data-aos="fade-down" data-aos-delay="200">
-                            <span class="title_1 ">My Servise</span>
+                            <span class="title_1 ">My Services</span>
 
                             <div class="col-10 offset-1">
                                 <hr class="text-white" />
                             </div>
                         </div>
 
+                        <?php
 
-                        <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center " data-aos="fade-down" data-aos-delay="300">
-                            <div class="row m-lg-4 m-2">
+                        $Servic = Database::search("SELECT * FROM `services`");
+                        $Servic_num = $Servic->num_rows;
+                        for ($i = 0; $i < $Servic_num; $i++) {
+                            $servic_data = $Servic->fetch_assoc();
 
-                                <div class="servise">
-                                    <div class="col-12 m-2 mt-3">
-                                        <img src="assets/icon/responsive.png" class="imgMain ">
-                                    </div>
+                        ?>
 
-                                    <div class="col-12">
-                                        <span class="text-white h4">Web Site Design</span>
-                                    </div>
-                                    <div class="col-12 mt-2 mb-3">
-                                        <span class="text-white-50">Web Site Design in HTML, CSS, JavaScript</span>
+                            <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center ">
+                                <div class="row m-lg-4 m-2">
+
+                                    <div class="servise">
+                                        <div class="col-12 m-2 mt-3">
+                                            <img src="<?php echo $servic_data["icon"]; ?>" class="imgMain ">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <span class="text-white h4"><?php echo $servic_data["title"]; ?></span>
+                                        </div>
+                                        <div class="col-12 mt-2 mb-3">
+                                            <span class="text-white-50"><?php echo $servic_data["dis"]; ?></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center " data-aos="fade-down" data-aos-delay="300">
-                            <div class="row m-lg-4 m-2">
+                        <?php
+                        }
+                        ?>
 
-                                <div class="servise">
-                                    <div class="col-12 m-2 mt-3">
-                                        <img src="assets/icon/responsive.png" class="imgMain ">
-                                    </div>
+                    </div>
+                </div>
 
-                                    <div class="col-12">
-                                        <span class="text-white h4">Web Site Design</span>
-                                    </div>
-                                    <div class="col-12 mt-2 mb-3">
-                                        <span class="text-white-50">Web Site Design in HTML, CSS, JavaScript</span>
-                                    </div>
-                                </div>
+                <div class="col-12" id="Services">
+                    <div class="row">
+
+                        <div class="col-12 text-center mt-3 " data-aos="fade-down" data-aos-delay="200">
+                            <span class="title_1 ">My Skills</span>
+
+                            <div class="col-10 offset-1">
+                                <hr class="text-white" />
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center " data-aos="fade-down" data-aos-delay="300">
-                            <div class="row m-lg-4 m-2">
+                        <?php
 
-                                <div class="servise">
-                                    <div class="col-12 m-2 mt-3">
-                                        <img src="assets/icon/responsive.png" class="imgMain ">
-                                    </div>
+                        $skills = Database::search("SELECT * FROM `skills`");
+                        $skills_num = $skills->num_rows;
+                        for ($i = 0; $i < $skills_num; $i++) {
+                            $skills_data = $skills->fetch_assoc();
 
-                                    <div class="col-12">
-                                        <span class="text-white h4">Web Site Design</span>
-                                    </div>
-                                    <div class="col-12 mt-2 mb-3">
-                                        <span class="text-white-50">Web Site Design in HTML, CSS, JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center " data-aos="fade-down" data-aos-delay="300">
-                            <div class="row m-lg-4 m-2">
+                        ?>
 
-                                <div class="servise">
-                                    <div class="col-12 m-2 mt-3">
-                                        <img src="assets/icon/responsive.png" class="imgMain ">
-                                    </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 mt-1" data-aos="fade-down" data-aos-delay="200">
+                                <div class="row m-lg-4 m-2">
 
                                     <div class="col-12">
-                                        <span class="text-white h4">Web Site Design</span>
+                                        <span class="text-white h4"><?php echo $skills_data["name"]; ?></span>
                                     </div>
-                                    <div class="col-12 mt-2 mb-3">
-                                        <span class="text-white-50">Web Site Design in HTML, CSS, JavaScript</span>
+
+                                    <div class="col-11 offset-1 mt-2 mb-3">
+                                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar <?php echo $skills_data["colore"]; ?>" style="width: <?php echo $skills_data["marks"]; ?>%"><?php echo $skills_data["marks"]; ?>%</div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
-                        </div>
+
+                        <?php
+                        }
+                        ?>
 
                     </div>
                 </div>
