@@ -43,6 +43,7 @@
 
         <div class="container-fluid">
             <div class="row">
+                
 
                 <div class="col-12" id="Services">
                     <div class="row">
@@ -64,7 +65,7 @@
 
                         ?>
 
-                            <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center ">
+                            <div class="col-12 col-sm-6 col-lg-4 mt-3 text-center " data-aos="fade-down" data-aos-delay="200">
                                 <div class="row m-lg-4 m-2">
 
                                     <div class="servise">
@@ -89,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="col-12" id="Services">
+                <div class="col-12" id="Skills">
                     <div class="row">
 
                         <div class="col-12 text-center mt-3 " data-aos="fade-down" data-aos-delay="200">
@@ -108,7 +109,6 @@
                             $skills_data = $skills->fetch_assoc();
 
                         ?>
-
 
                             <div class="col-12 col-sm-6 col-lg-4 mt-1" data-aos="fade-down" data-aos-delay="200">
                                 <div class="row m-lg-4 m-2">
@@ -135,10 +135,12 @@
 
             </div>
         </div>
+
+        <?php
+            require "footer.php";
+            ?>
+
     </div>
-
-
-
 
 
     <!-- page eke item eka para enna danna one -->

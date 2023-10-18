@@ -2,19 +2,20 @@
 	font-family: "Poppins";
 	src: url("/assets/font/Poppins-SemiBold.ttf");
 }
+
 @font-face {
-    font-family: "Quicksand";
-    src: url("/assets/font/Quicksand-VariableFont_wght.ttf");
+	font-family: "Quicksand";
+	src: url("/assets/font/Quicksand-VariableFont_wght.ttf");
 }
 
 * {
-    font-family: "Quicksand";
+	font-family: "Quicksand";
 }
 
 .title_1 {
 	font-family: "Poppins";
 	font-size: 45px;
-	color: #4a4a4a;
+	color: #ffffff;
 }
 
 .profile {
@@ -235,11 +236,28 @@
 /* Social Media icon */
 
 
-.sampleDiv:hover{
+.sampleDiv:hover {
 	background-color: white;
 	border-radius: 5px;
-    box-shadow: 0px 10px 20px 0px rgb(169, 169, 169);
+	box-shadow: 0px 10px 20px 0px rgb(169, 169, 169);
 	transform: translate(0px, -20px);
 	transition-duration: 0.5s;
+}
+
+
+.imgMain {
+	width: 100px;
+}
+
+.servise:hover {
+	transform: translate(0px, -15px);
+	transition-duration: 0.5s;
+	background-color: rgb(28, 28, 28);
+	cursor: pointer;
+}
+
+.iconf:hover {
+	color: #964040;
+	transition-duration: 0.4s;
 }
 
