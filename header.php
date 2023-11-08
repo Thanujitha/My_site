@@ -30,7 +30,7 @@ require "connection.php";
 
             </div>
 
-            <a href="#home" class="link1">
+            <a href="index.php" class="link1">
                 <button class="btn btn-outline-light m-1">Home </button>
             </a>
 
@@ -38,7 +38,7 @@ require "connection.php";
                 <button class="btn btn-outline-light m-1">About </button>
             </a>
 
-            <a href="#sample" class="link1">
+            <a href="sample.php" class="link1">
                 <button class="btn btn-outline-light m-1">Sample </button>
             </a>
 
